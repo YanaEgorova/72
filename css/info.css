@@ -1,0 +1,27 @@
+.info__wrapper {
+}
+.info .sub-title span {
+  color: var(--first-brand-color);
+  font-family: inherit;
+}
+.info .item {
+  padding: 3rem;
+}
+.info .item .text {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.info .item:nth-child(even) {
+  background-color: var(--second-brand-color);
+}
+.info .item:nth-child(odd) {
+  background-color: var(--third-brand-color);
+}
+.info .item:nth-child(odd) .text {
+  color: var(--sub-text-color);
+}
+@media screen and (min-width: 1024px) {
+  .info .item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
